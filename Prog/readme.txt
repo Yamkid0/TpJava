@@ -1,0 +1,1 @@
+code qualitatif ( commentaires etc), des tests avec Junit, gerer la version avec git trello etc, bien concevoir modulaire etc, programmer en BDD TDD je dirais
