@@ -25,7 +25,7 @@ public class Sudoku implements RegleDuJeu{
 	@Override
 	public void initialiserJeu(int nbLigne, int nbColonne) {
 		grilleJeu = new Case[nbLigne][nbColonne];
-		grilleJeu[0][0] = new Case("1",true,1);
+		grilleJeu[0][0] = new Case("1",true,1);//initialisation en dur pour consigne
 		grilleJeu[1][2] = new Case("2",true,2);
 		grilleJeu[3][1] = new Case("3",true,3);
 		grilleJeu[3][3] = new Case("4",true,4);

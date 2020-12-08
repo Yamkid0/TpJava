@@ -26,6 +26,7 @@ public class InterfaceConsole implements Interface {
 	@Override
 	/**
 	 * Permet de saisir une nouvelle entree dans la grille de jeu
+	 * @param grilleJeu la grille de jeu
 	 */
 	public void saisirCase(Case[][] grilleJeu) {
 		Scanner entree = new Scanner(System.in);
@@ -41,7 +42,7 @@ public class InterfaceConsole implements Interface {
 		//TODO verifier que le symbole est correct avec la regle
 		//TODO verification que la ligne est la colonne existe
 		if(grilleJeu[ligne][colonne]!= null
-		&& grilleJeu[ligne][colonne].isInitial()) { //Si il s'agit d'une case initial
+			&& grilleJeu[ligne][colonne].isInitial()) { //Si il s'agit d'une case initial
 			System.out.println("Case initial impossible de modifier");
 		} else {
 			grilleJeu[ligne][colonne] = new Case(symbole,false,0);//TODO gerer les bloc
