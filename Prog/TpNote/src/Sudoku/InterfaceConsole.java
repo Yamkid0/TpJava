@@ -19,13 +19,13 @@ public class InterfaceConsole implements Interface {
 					System.out.print(" |"); // sinon on n'affiche rien
 				}
 			}
-			System.out.println(); //saut de ligne
 		}
+		System.out.println(); //saut de ligne
 	}
 
 	@Override
 	/**
-	 * Permet de s
+	 * Permet de saisir une nouvelle entree dans la grille de jeu
 	 */
 	public void saisirCase(Case[][] grilleJeu) {
 		Scanner entree = new Scanner(System.in);
@@ -46,5 +46,14 @@ public class InterfaceConsole implements Interface {
 		} else {
 			grilleJeu[ligne][colonne] = new Case(symbole,false,0);//TODO gerer les bloc
 		}
+	}
+
+	@Override
+	/**
+	 * Affiche la victoire
+	 */
+	public void afficherVictoire() {
+		System.out.println("Victoire");
+		
 	}
 }

@@ -16,8 +16,6 @@ public class Sudoku implements RegleDuJeu{
 		this.interfaceSudoku = interfaceSudoku;
 	}
 	
-	
-	
 	/**
 	 * Initialise le jeu -> la grille de jeu
 	 * Place les elements initiaux dans des cases
@@ -32,9 +30,6 @@ public class Sudoku implements RegleDuJeu{
 		grilleJeu[3][1] = new Case("3",true,3);
 		grilleJeu[3][3] = new Case("4",true,4);
 	}
-
-	
-
 	
 	/**
 	 * Verif que la colonne et la ligne soit valide
@@ -66,8 +61,10 @@ public class Sudoku implements RegleDuJeu{
 		while(partiePasGagne) {
 			saisirCase();
 			interfaceSudoku.afficherGrille(grilleJeu);
-			partiePasGagne = verifierVictoire();
+			partiePasGagne = !verifierVictoire(); //si la partie est gagné alors retourne true 
+			//donc le boolean partiePasGagne doit etre a false pour couper la fonction principale
 		}
+		interfaceSudoku.afficherVictoire();
 	}
 	
 	/**
@@ -110,10 +107,14 @@ public class Sudoku implements RegleDuJeu{
 		} else {
 			grilleJeu[ligne][colonne] = new Case(symbole,false,0);//TODO gerer les bloc
 		}
-		verifierAjout(ligne, colonne, symbole); //verifie la validité avec la règle ( ex : pas déjà le meme symbole dans la ligne)
+		verifierAjout(ligne, colonne); //verifie la validité avec la règle ( ex : pas déjà le meme symbole dans la ligne)
 		
 	}
 
+	
+	/**
+	 * Verifie la victoire
+	 */
 	@Override
 	public boolean verifierVictoire() {
 		return true;

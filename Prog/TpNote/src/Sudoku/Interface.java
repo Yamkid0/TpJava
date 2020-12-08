@@ -12,5 +12,7 @@ public interface Interface {
 	 * @param grilleJeu la grille du jeu
 	 */
 	public void saisirCase(Case[][] grilleJeu);
+
+	public void afficherVictoire();
 	
 }
