@@ -1,0 +1,50 @@
+GitHub :
+Pour ce projet j'ai mis en place un github pour permettre un suivi du projet et de ses différentes versions.
+Le github me permet de rollback en cas d'erreur et de partager mon projet et son avancement.
+
+
+Qualité code :
+Pour realiser mon projet j'ai mis en place les conventions d'écriture pour le nommage des : classes, variables, fonctions ...
+Ceux ci respectent donc les conventions imposées par Java et ont des noms rappelant le sujet(ex: reprendre les termes du sujet pour nommer des variables) pour faciliter la compréhension du code.
+-> identificateurs cohérents + significatifs, pas de mots réservés.
+En plus de cela, j'ai respecté les règles d'indentation pour plus de lisibilité. Chaque indentation est donc équivalente à 4 espaces et les lignes ne dépassent pas 80 colonnes.
+
+Bonnes règles de codage(commentaires) :
+J'ai essayé au maximum de limiter les répétions de code afin de l'optimiser et de le rendre plus propre.
+Par ailleurs, j'ai aussi écris des commentaires en respect avec les conventions Java
+ - Commentaires de classes et de fonctions : /** avec des @ pour respecter la convention et permettre à notre code d'être compatible avec des outils d'analyse comme doxygen 
+ qui augmente la lisibilité et la maintenabilité.
+
+ Découpage en classe pour réduire la complexité et augmenter la réutilisabilité
+
+ Un return par fonction
+
+ Eviter les conditions negatives
+
+ privilégier les constantes
+
+Testabilité TDD + Junit :
+Mise en place du TDD et de Junit pour tester mes fonctions.
+
+Simplicité des fonctions :
+Dans le codage des méthodes en privilégiant au maximum la simplicité des fonctions et leurs compréhensibilitées.
+
+
+------------------------------------------------------------
+Déduit de la conception:
+Evolutivité:
+J'ai tenté d'optimiser au maximum ma conception pour que le logiciel puisse évoluer facilement.
+
+Modularité :
+
+Critère de qualité (découper code en plusieurs classes) :
+
+Simplicité :
+Simplifier la conception pour une prise en main plus simple.
+
+Réutilisabilité :
+Découper le code pour rendre l'application plus modulaire en scindant les classes pour limiter les inter dépendances.
+
+Maintenabilite :
+Crée par le reste
+
